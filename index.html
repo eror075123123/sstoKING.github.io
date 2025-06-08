@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>СТО "КИНГ"</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+
+</head>
+  <style>
+    body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 40px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+  }
+
+  nav a {
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #222;
+  }
+
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+section {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+
+section h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+
+.company-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-info .text {
+  flex: 1 1 60%;
+  padding-right: 20px;
+}
+
+.company-info img {
+  flex: 1 1 35%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #f9f9f9;
+  flex: 1 1 30%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.service-card h3 {
+  margin-top: 0;
+  color: #2980b9;
+}
+
+
+.prices-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.prices-table th, .prices-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.prices-table th {
+  background-color: #eee;
+}
+.prices-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.review {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius:8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+.review p {
+  margin: 0 0 10px;
+}
+.review .author {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+.infoinfo {
+  font-size:26px;
+  font-family:arial;
+}
+  </style>
+<body>
+
+<header>
+  <h1>СТО "КИНГ"</h1>
+</header>
+
+<nav>
+  <a href="#about">О компании</a>
+  <a href="#services">Услуги</a>
+  <a href="#prices">Цены</a>
+  <a href="#reviews">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<div class="main">
+
+
+<section id="about">
+  <h2>О нашем сервисе</h2>
+  <div class="company-info">
+    <div class="text">
+      <p>КИНГ — это команда профессиональных автомастеров с многолетним опытом. Мы предоставляем услуги по ремонту и обслуживанию автомобилей всех марок и моделей. Используем современное оборудование и оригинальные запчасти, чтобы ваши автомобили работали как новые.</p>
+      <p>Обращайтесь к нам — и вы получите быстрый и качественный сервис по разумной цене.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1606045988623-30f683d70edf?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Автомастерская">
+  </div>
+</section>
+
+
+<section id="services">
+  <h2>Наши услуги</h2>
+  <div class="services-list">
+    <div class="service-card">
+      <h3>Диагностика автомобиля</h3>
+      <p>Диагностика подвески.</p>
+      <p>Компьютерная диагностика систем автомобиля.</p>
+      <p>Компьютерная диагностика двигателя.</p>
+      <p>Первичная диагностика АКПП.</p>
+      <p>Первичная диагностика МКПП.</p>
+    </div>
+    <div class="service-card">
+      <h3>Техническое обслуживание</h3>
+      <p>Экспрес замена / замена  масла в двигателе.</p>
+  <p>Замена воздушного / масляного / салонного / топливного фильтра </p>
+            <p>Замена тормозной жидкости.</p>
+            <p>Замена масла в заднем редукторе.</p>
+            <p>Замена масла в гидроусилителе руля.</p>
+    </div>
+    <div class="service-card">
+      <h3>Ремонт подвески</h3>
+      <p>Диагностика подвески.</p>
+            <p>Ремонт передней / задней подвески.</p>
+            <p>Замена рычагов.</p>
+            <p>Замена пружин подвески.</p>
+            <p>Замена шаровой опоры.</p>
+    </div>
+    <div class="service-card">
+      <h3>Ремонт МКПП</h3>
+      <p>Диагностика МКПП.</p>
+            <p>Замена МКПП.</p>
+            <p>Замена сцепления.</p>
+            <p>Замена масла в МКПП.</p>
+            <p>замена вышибного подшибника.</p>
+    </div>
+    <div class="service-card">
+      <h3>Ремонт тормозной системы </h3>
+      <p>Замена тормозных дисков .</p>
+            <p>Замена тормозных колодок .</p>
+            <p>Замена тормозных барабанов.</p>
+            <p>Ремонт суппортов.</p>
+            <p>Замена тормозных шлангов.</p>
+    </div>
+    <div class="service-card">
+      <h3>Ремонт рулевого управления</h3>
+      <p>Замена рулевого наконечника</p>
+            <p>Замена рулевой рейки / тяги.</p>
+            <p>Замена рулевых крестовин.</p>
+            <p>Ремонт и замена гидроусилителя.</p>
+            <p>Замена масла в гидроусилителе руля.</p>
+    </div>
+        <div class="service-card">
+      <h3>Замена фильтров и масел</h3>
+      <p>Замена фильтров и масел дизельного двигателя.</p>
+ <p>Замена фильтров и масел бензинового двигателя.</p>
+            <p>Замена масла в заднем редукторе.</p>
+            <p>Замена масла в АКПП.</p>
+            <p>Замена масла в МКПП.</p>
+    </div>
+        <div class="service-card">
+      <h3>Заправка и ремонт кондиционеров</h3>
+      <p>Диагностика систем кондиционирования,вентиляции и отопления</p>
+            <p>Заправка автокондиционеров.</p>
+            <p>Ремонт автокондиционеров.</p>
+   
+    </div>
+  </div>
+</section>
+
+
+<section id="prices">
+<h2>Цены на услуги</h2>
+<table class="prices-table">
+  <thead>
+    <tr>
+      <th>Услуга</th>
+      <th>Стоимость</th>
+    </tr>
+  </thead>
+  <tbody>
+        <tr class = "infoinfo">
+
+      <td >Диагностика автомобиля</td>
+          
+    </tr>
+      
+    <tr>
+
+      <td>Диагностика подвески</td>
+      <td>от 21 руб</td>
+    </tr>
+    <tr>
+      <td>Компьютерная диагностика систем автомобиля</td>
+      <td>от 28 руб</td>
+    </tr>
+    <tr>
+      <td>Компьютерная диагностика двигателя</td>
+      <td>от 28 руб</td>
+    </tr>
+    <tr>
+      <td>Диагностика системы охлаждения</td>
+      <td>от 20 руб</td>
+    </tr>
+    <tr>
+      <td>Первичная диагностика дизельных двигателей</td>
+      <td> —</td>
+    </tr>
+       <tr>
+      <td>Первичная диагностика бензиновых двигателей</td>
+      <td>—</td>
+    </tr>
+       <tr>
+      <td>Первичная диагностика АКПП</td>
+      <td>—</td>
+    </tr>
+       <tr>
+      <td>Первичная диагностика МКПП</td>
+      <td>—</td>
+    </tr>
+       <tr>
+      <td>Диагностика авто перед покупкой</td>
+      <td>от 30 руб</td>
+    </tr>
+       <tr>
+       <tr>
+      <td>Первичная диагностика тормозной системы</td>
+      <td>—</td>
+    </tr>
+       <tr>
+      <td>Первичная диагностика систем кондиционирования</td>
+      <td>от 21 руб</td>
+    </tr>
+      
+    <tr class = "infoinfo">
+
+      <td >Техническое обслуживание автомобиля</td>
+          
+    </tr>
+          
+    </tr>
+       <tr>
+      <td>Замена масла в двигателе</td>
+      <td>от 21 руб</td>
+    </tr>
+           <tr>
+      <td>Экспресс замена масла в двигателе</td>
+      <td>от 35 руб</td>
+    </tr>
+           <tr>
+      <td>Замена масла в АКПП</td>
+      <td>от 70 руб</td>
+    </tr>
+           <tr>
+      <td>Замена масла в МКПП</td>
+      <td>от 30 руб</td>
+    </tr>
+           <tr>
+      <td>Замена масла в заднем редукторе</td>
+      <td>от 20 руб</td>
+    </tr>
+           <tr>
+      <td>Замена масла в гидроусилителе руля</td>
+      <td>от 21 руб</td>
+    </tr>
+           <tr>
+      <td>Замена масляного фильтра</td>
+      <td>от 10 руб</td>
+    </tr>       <tr>
+      <td>Замена воздушного фильтра</td>
+      <td>от 14 руб</td>
+    </tr>
+           <tr>
+      <td>Замена салонного фильтра</td>
+      <td>от 10 руб</td>
+    </tr>
+           <tr>
+      <td>Замена топливного фильтра</td>
+      <td>от 20 руб</td>
+    </tr>
+           <tr>
+      <td>Замена тормозной жидкости</td>
+      <td>от 21 руб</td>
+    </tr>
+           <tr>
+      <td>Замена антифриза</td>
+      <td>от 25 руб</td>
+    </tr>       <tr>
+      <td>Замена свечей зажигания</td>
+      <td>от 7 руб/шт.</td>
+    </tr>
+          <tr class = "infoinfo">
+
+      <td >Ремонт подвески</td>
+          
+    </tr>
+             <tr>
+      <td>Диагностика подвески</td>
+      <td>от 21 руб (при ремонте бесплатно)</td>
+    </tr>
+             <tr>
+      <td>Ремонт передней подвески</td>
+      <td>по договоренности</td>
+    </tr>
+             <tr>
+      <td>Ремонт задней подвески</td>
+      <td>по договоренности</td>
+    </tr>
+             <tr>
+      <td>Замена пружин подвески</td>
+      <td>от 50 руб</td>
+    </tr>
+             <tr>
+      <td>Замена шаровой опоры</td>
+      <td>от 18 руб</td>
+    </tr>
+             <tr>
+      <td>Замены рычагов</td>
+      <td>от 28 руб</td>
+    </tr>
+             <tr>
+      <td>Ремонт задней балки</td>
+      <td>по договоренности</td>
+    </tr>
+             <tr>
+      <td>Замена задней балки</td>
+      <td>по договоренности</td>
+    </tr>
+             <tr>
+      <td>Замена сайлентблоков задней балки</td>
+      <td>от 50 руб</td>
+    </tr>
+             <tr>
+      <td>Замена ШРУСа</td>
+      <td>от 40 руб</td>
+    </tr>
+             <tr>
+      <td>Замена пыльника ШРУСа</td>
+      <td>от 40 руб</td>
+    </tr>
+             <tr>
+      <td>Замена полуоси</td>
+      <tdот 35 руб</td>
+    </tr>
+           <tr>
+      <td>Замена сальника полуоси</td>
+      <td>от 40 руб</td>
+    </tr>
+           <tr>
+      <td>Замена сайлентблоков рычагов подвески</td>
+      <td>от 35 руб</td>
+    </tr>
+           <tr>
+      <td>Замена сайлентблоков подрамника</td>
+      <td>по договоренности</td>
+    </tr>
+           <tr>
+      <td>Замена подрамника в сборе</td>
+      <td>по договоренности</td>
+    </tr>
+           <tr>
+      <td>Замена амортизатора в авто</td>
+      <td>от 52 руб</td>
+    </tr>
+           <tr>
+      <td>Замена опорного подшипника</td>
+      <td>от 50 руб</td>
+    </tr>
+           <tr>
+      <td>Замена втулок амортизатора</td>
+      <td>от 20 руб</td>
+    </tr>
+           <tr>
+      <td>Замена отбойника, пыльника амортизатора</td>
+      <td>от 40 руб</td>
+    </tr>
+           <tr>
+      <td>Замена втулок стабилизаторов</td>
+      <td>от 35 руб</td>
+    </tr>
+           <tr>
+      <td>Замена стоек стабилизаторов</td>
+      <td>от 15 руб</td>
+    </tr>
+           <tr>
+      <td>Замена ступичного подшипника</td>
+      <td>от 35 руб</td>
+    </tr>
+           <tr>
+      <td>Замена ступицы в сборе</td>
+      <td>от 35 руб</td>
+    </tr>
+           <tr>
+      <td>Замена шпильки, болта ступицы</td>
+      <td>от 10 руб</td>
+    </tr>
+       <tr class = "infoinfo">
+
+      <td >Ремонт двигателя</td>
+          
+    </tr>
+    <tr class = "infoinfo">
+
+      <td >Ремонт МКПП</td>
+          
+    </tr>
+           <tr>
+      <td>Диагностика МКПП</td>
+      <td>бесплатно</td>
+    </tr>
+           <tr>
+      <td>Замена МКПП</td>
+      <td>от 200 руб</td>
+    </tr>
+           <tr>
+      <td>Замена сцепления</td>
+      <td>от 200 руб</td>
+    </tr>
+           <tr>
+      <td>Замена масла в МКПП</td>
+      <td>от 21 руб</td>
+    </tr>
+       <tr>
+      <td>Замена выжимного подшипника</td>
+      <td>от 200 руб</td>
+    </tr>
+      <tr class = "infoinfo">
+
+      <td >Ремонт системы охлаждения</td>
+          
+    </tr>
+      <tr class = "infoinfo">
+
+      <td >Ремонт тормозной системы</td>
+          
+    </tr>
+       <tr>
+      <td>Замена тормозных колодок</td>
+      <td>от 40 руб</td>
+    </tr>
+       <tr>
+      <td>Замена тормозных дисков</td>
+      <td>от 60 руб</td>
+    </tr>
+       <tr>
+      <td>Замена тормозных барабанов</td>
+      <td>от 10 руб</td>
+    </tr>
+       <tr>
+      <td>Ремонт суппортов</td>
+      <td>от 45 руб</td>
+    </tr>
+       <tr>
+      <td>Замена тормозных шлангов</td>
+      <td>от 20 руб</td>
+    </tr>
+       <tr>
+      <td>Замена тормозных трубок</td>
+      <td>от 30 руб</td>
+    </tr>
+  
+  
+    <tr class = "infoinfo">
+
+      <td >Ремонт рулевого управления</td>
+          
+    </tr>
+  
+  
+       <tr>
+      <td>Замена рулевого наконечника</td>
+      <td>от 21 руб</td>
+    </tr>
+     <tr>
+      <td>Замена рулевой рейки</td>
+      <td>от 150 руб</td>
+    </tr>
+     <tr>
+      <td>Замена рулевой тяги</td>
+      <td>от 28 руб</td>
+    </tr>
+     <tr>
+      <td>Замена рулевых крестовин</td>
+      <td>после осмотра</td>
+    </tr>
+     <tr>
+      <td>Ремонт и замена гидроусилителя</td>
+      <td>после осмотра</td>
+    </tr>
+     <tr>
+      <td>Замена масла в гидроусилителе руля</td>
+      <td>после осмотра</td>
+    </tr>
+  
+  
+  
+  <tr class = "infoinfo">
+
+      <td >Ремонт электрооборудования</td>
+          
+    </tr>
+  <tr class = "infoinfo">
+
+      <td >Замена фильтров и масел</td>
+          
+    </tr>
+  
+  
+  
+     <tr>
+      <td>Замена масла и фильтров дизельного двигателя</td>
+      <td>от 21 руб</td>
+    </tr>   <tr>
+      <td>Замена масла и фильтров бензинового двигателя</td>
+      <td>от 21 руб</td>
+    </tr>
+     <tr>
+      <td>Замена воздушного фильтра</td>
+      <td>от 14 руб</td>
+    </tr>
+     <tr>
+      <td>Замена салонного фильтра</td>
+      <td>от 10 руб</td>
+    </tr>
+     <tr>
+      <td>Замена топливного фильтра</td>
+      <td>от 20 руб</td>
+    </tr>
+       <tr>
+      <td>Замена масла в АКПП</td>
+      <td>от 70 руб</td>
+    </tr>
+       <tr>
+      <td>Замена масла в МКПП</td>
+      <td>от 30 руб</td>
+    </tr>
+       <tr>
+      <td>Замена масла в заднем редукторе</td>
+      <td>от 20 руб</td>
+    </tr>
+  
+  
+    <tr class = "infoinfo">
+
+      <td >Заправка и ремонт кондиционеров</td>
+          
+    </tr>
+  
+  
+  
+   <tr>
+      <td>Диагностика систем кондиционирования, вентиляции и отопления</td>
+      <td>от 10 руб</td>
+    </tr>
+   <tr>
+      <td>Заправка автокондиционеров</td>
+      <td>от 10 руб/работа
+8руб/100 гр. фреона</td>
+    </tr>
+   <tr>
+      <td>Ремонт автокондиционеров</td>
+      <td>по договоренности</td>
+    </tr>
+   
+  </tbody>
+</table>
+</section>
+
+
+<section id="reviews">
+<h2>Отзывы наших клиентов</h2>
+<div class="reviews">
+  <div class="review">
+    <p>"Качественно оказали услугу. Хороший сервис."</p>
+    <div class="author">Максим П.</div>
+  </div>
+  <div class="review">
+    <p>"Очень культурное и вежливое общение с клиентом.Сделали все быстро.Все понравилось"</p>
+    <div class="author">Александр К.</div>
+  </div>
+  <div class="review">
+    <p>"Очень быстро и качественно.По окончанию ремонта дали подробную информацию о проделанной работе."</p>
+    <div class="author">Анастасия М.</div>
+  </div>
+</div>
+</section>
+
+
+<section id="contacts">
+<h2>Контакты</h2>
+<div class="contact-info">
+  <p><strong>Адрес:</strong> Гродно, Ткацкая улица, 8/1</p>
+  <p><strong>Телефон:</strong> +375 33 655 2222 </p>
+  <p><strong>TikTok:</strong> @sto_king_grodno</p>
+  <p><strong>Instagram:</strong> @sto_king24</p>
+</div>
+</section>
+
+</div>
+
+
+<footer>
+  &copy; 2025 СТО "КИНГ". Все права защищены.
+</footer>
+
+</body>
+</html>
